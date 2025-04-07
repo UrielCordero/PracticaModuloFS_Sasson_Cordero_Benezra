@@ -8,8 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Uriel Cordero y Lucas Benezra",
-  "license": "ISC"
-
-
-  
+  "license": "ISC",
+  "dependencies": {
+    "country-data": "^0.0.31",
+    "world-countries": "^5.1.0"
+  }
 }

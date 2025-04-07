@@ -28,3 +28,17 @@ fs.writeFileSync('salida.txt', contenido);
 const url = require('url');
 let objeto = url.parse("http://www.ort.edu.ar:8080/alumnos/index.htm?curso=2022&mes=mayo", true);
 console.log(objeto);
+
+
+
+try {
+  let objeto = url.parse("http://www.ort.edu.ar:8080/alumnos/index.htm?curso=2022&mes=mayo", true);
+  console.log(objeto);
+} catch (error) {
+  console.log("Paso un error en la URL:", error.message);
+}
+
+
+const obtenerMoneda = require('./Ej7ObtenerMoneda');
+let moneda = obtenerMoneda("AR");
+console.log(moneda);
